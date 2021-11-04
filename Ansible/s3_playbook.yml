@@ -1,0 +1,18 @@
+- hosts: localhost
+  tasks:
+  - name: chutar o balde pelo ansible
+    s3_bucket:
+      name: baldenovo
+      aws_access_key: AKIAUQ7BZT3KTKRDHF7T
+      aws_secret_key: 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 
+     
+      state: present
+      region: us-east-1
+      versioning: no
+      tags:
+         name: baldechutado
+         type: testedaauala
+
+
+
+         # ansible-galaxy collection install amazon.aws
