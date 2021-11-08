@@ -24,19 +24,24 @@ Com o terminal do Ubuntu aberto:
 
 
 Digite os comandos:
+Python já vem com o Ubuntu do WSL.
 
-```
+Instalação do gerenciador de pacotes PIP e do SDK boto3:
+``` 
 apt install pip && pip install boto3
 ```
+
 ```
 apt install ansible
 ```
+Instalação do AWS CLI, pois tem os modulos para configuração da comunicação entre nossa maquina e a AWS
 ```
 pip install awscli
 ```
 
-Selecione área geográfica:
+Selecione área geográfica se for solicitado.
 
+Vamos fazer o upgrade do AWS CLI
 ```
 pip install --upgrade awscli
 ```
