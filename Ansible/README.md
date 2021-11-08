@@ -1,4 +1,5 @@
 Clique no menu Iniciar e digite: Ativar ou desativar recursos do Windows 
+
 ![Menu iniciar](https://github.com/nidiodolfini/InfraII/blob/main/Ansible/img/manu%20iniciar.png?raw=true)
 
 
@@ -10,13 +11,16 @@ Abra a Microsoft Store:
 
 
 Pesquise Ubuntu e instale e versão 20 LTS:
+
 ![Store](https://github.com/nidiodolfini/InfraII/blob/main/Ansible/img/instalar%20ubuntu.png?raw=true)
 
 Crie um usuário de administrador, pode colocar qualquer nome e coloque uma senha, pois ele será utilizado no "sudo".
 
-Com o terminal do Ubuntu aberto:
-![terminal](https://github.com/nidiodolfini/InfraII/blob/main/Ansible/img/ubuntu.png?raw=true)
+Procure o Ubuntu instalado no Menun Iniciar.
 
+Com o terminal do Ubuntu aberto:
+
+![terminal](https://github.com/nidiodolfini/InfraII/blob/main/Ansible/img/ubuntu.png?raw=true)
 
 
 Digite os comandos:
@@ -35,4 +39,13 @@ Selecione área geográfica:
 
 ```
 pip install --upgrade awscli
+```
+
+Para verificar a instalação do AWS CLI:
+```
+aws --version
+```
+
+```
+ansible-galaxy collection install amazon.aws
 ```
