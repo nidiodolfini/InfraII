@@ -22,9 +22,12 @@ Com o terminal do Ubuntu aberto:
 
 ![terminal](https://github.com/nidiodolfini/InfraII/blob/main/Ansible/img/ubuntu.png?raw=true)
 
+Python já vem com o Ubuntu do WSL, mas verifique com o comando:
+``` 
+python3 --version
+```
 
 Digite os comandos:
-Python já vem com o Ubuntu do WSL.
 
 Instalação do gerenciador de pacotes PIP e do SDK boto3:
 ``` 
