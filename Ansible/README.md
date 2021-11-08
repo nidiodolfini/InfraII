@@ -15,27 +15,17 @@ Com o terminal do Ubuntu aberto:
 
 Digite os comandos:
 
-'''
-apt install pip && pip install boto3
-'''
-
-
-'''
-apt install ansible
-
-'''
-'''
-pip install awscli
-
-'''
-Selecione área geográfica
-'''
-pip install --upgrade awscli
-
-'''
-
 ```
-git status
-git add
-git commit
+apt install pip && pip install boto3
+```
+```
+apt install ansible
+```
+pip install awscli
+```
+```
+Selecione área geográfica
+```
+```
+pip install --upgrade awscli
 ```
