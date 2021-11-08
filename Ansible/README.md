@@ -33,3 +33,9 @@ Selecione área geográfica
 pip install --upgrade awscli
 
 '''
+
+```
+git status
+git add
+git commit
+```
