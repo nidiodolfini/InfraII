@@ -21,11 +21,12 @@ apt install pip && pip install boto3
 ```
 apt install ansible
 ```
+```
 pip install awscli
 ```
-```
-Selecione área geográfica
-```
+
+Selecione área geográfica:
+
 ```
 pip install --upgrade awscli
 ```
