@@ -1,18 +1,24 @@
+# hosts determina onde será executado a tarefa, neste caso localhost ou seja nossa maquina.
 - hosts: localhost
+#lista de tarefas a serem executada
   tasks:
+  #nome da tarefa a ser executada pode ser qualquer nome
   - name: chutar o balde pelo ansible
+  # recurso a ser criado, neste caso o Bucket dentro do S3
     s3_bucket:
-      name: baldenovo
+    #nome do recurso, precisa ser unico, pois se não ele vai dar como existente
+      name: newbucketT4
+      #chave de usuário e senha, para não precisar ficar logando pelo terminal
       aws_access_key: AKIAUQ7BZT3KTKRDHF7T
       aws_secret_key: 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 
-     
+
+      #estado determina que o bucket de nome newbucketT4 deve estar no servidor AWS
       state: present
+      #determina a região que será criado.
       region: us-east-1
+      #controla se terá ou não versinamento do recurso.
       versioning: no
+      #aqui cria a tag da qual o bucket fará parte.
       tags:
          name: baldechutado
          type: testedaauala
-
-
-
-         # ansible-galaxy collection install amazon.aws
