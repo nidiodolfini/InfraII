@@ -9,8 +9,8 @@
     #nome do recurso, precisa ser unico, pois se não ele vai dar como existente
       name: newbucketT4
       #chave de usuário e senha, para não precisar ficar logando pelo terminal
-      aws_access_key: AKIAUQ7BZT3KTKRDHF7T
-      aws_secret_key: 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 
+      aws_access_key: AKIAUQ7BZT3KXP4FY6PR
+      aws_secret_key: 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 
 
       #estado determina que o bucket de nome newbucketT4 deve estar no servidor AWS
       state: present

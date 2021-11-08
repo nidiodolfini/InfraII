@@ -29,6 +29,10 @@ python3 --version
 
 Digite os comandos:
 
+``` 
+apt update
+```
+
 Instalação do gerenciador de pacotes PIP e do SDK boto3:
 ``` 
 apt install pip && pip install boto3
@@ -56,4 +60,18 @@ aws --version
 Agora vamos instalar a ferramenta que ajudará na comunicação entre o Ansible e a AWS:
 ```
 ansible-galaxy collection install amazon.aws
+```
+
+```
+mkdir aulaAnsible
+```
+
+```
+cd aulaAnsible
+```
+
+copie o arquivo "s3_playbook.yml" para a pasta criada.
+
+```
+ansible-playbook s3_playbook.yml
 ```
