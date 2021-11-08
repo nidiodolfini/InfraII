@@ -45,7 +45,7 @@ Para verificar a instalação do AWS CLI:
 ```
 aws --version
 ```
-
+Agora vamos instalar a ferramenta que ajudará na comunicação entre o Ansible e a AWS:
 ```
 ansible-galaxy collection install amazon.aws
 ```
