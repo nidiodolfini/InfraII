@@ -1,5 +1,5 @@
 Clique no menu Iniciar e digite: Ativar ou desativar recursos do Windows 
-![Menu iniciar] (/https://raw.githubusercontent.com/nidiodolfini/InfraII/main/Ansible/img/ativar%20subsistemas.png)
+![Menu iniciar] (https://raw.githubusercontent.com/nidiodolfini/InfraII/main/Ansible/img/ativar%20subsistemas.png)
 
 Verifique se está ativado o recurso: Subsistemas do Windows para Linux
 
