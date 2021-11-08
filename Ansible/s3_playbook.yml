@@ -7,7 +7,7 @@
   # recurso a ser criado, neste caso o Bucket dentro do S3
     s3_bucket:
     #nome do recurso, precisa ser unico, pois se não ele vai dar como existente
-      name: newbucketT4
+      name: newbuckett4
       #chave de usuário e senha, para não precisar ficar logando pelo terminal
       aws_access_key: AKIAUQ7BZT3KXP4FY6PR
       aws_secret_key: 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 
