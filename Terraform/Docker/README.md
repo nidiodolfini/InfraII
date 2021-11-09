@@ -7,7 +7,7 @@ cd aula-terraform-docker
 ```
 crie o arquivo main.tf ou baixe o arquivo:
 
-https://github.com/nidiodolfini/InfraII/tree/main/Terraform
+https://github.com/nidiodolfini/InfraII/blob/main/Terraform/Docker/main.tf
 
 ![main tf](https://github.com/nidiodolfini/InfraII/blob/main/Terraform/img/main%20tf.png?raw=true)
 
