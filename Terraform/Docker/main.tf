@@ -1,3 +1,4 @@
+#define o provedor 
 terraform {
   required_providers {
     docker = {
