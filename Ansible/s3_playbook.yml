@@ -10,7 +10,7 @@
       name: newbuckett4
       #chave de usuário e senha, para não precisar ficar logando pelo terminal
       aws_access_key: AKIAUQ7BZT3KXP4FY6PR
-      aws_secret_key: 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 
+      aws_secret_key: 9OQMPU8iikrFjPvKhXhPeKAgOi8uu2MAF5Llebyv
 
       #estado determina que o bucket de nome newbucketT4 deve estar no servidor AWS
       state: present
