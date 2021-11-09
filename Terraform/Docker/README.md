@@ -5,7 +5,7 @@ mkdir aula-terraform-docker
 ```
 cd aula-terraform-docker
 ```
-crie o arquivo main.tf ou baixe o arquivo:
+crie o arquivo main.tf ou baixe o arquivo a pasta do projeto:
 
 https://github.com/nidiodolfini/InfraII/blob/main/Terraform/Docker/main.tf
 
