@@ -10,7 +10,7 @@ Copie o arquivo para a pasta que você criou:
 
 ![Terraform exe](https://github.com/nidiodolfini/InfraII/blob/main/Terraform/img/APP.png?raw=true)
 
-Digite variáveis de ambiente no menu iniciar:
+Digite *variáveis de ambiente* no menu iniciar:
 
 ![menu iniciar](https://github.com/nidiodolfini/InfraII/blob/main/Terraform/img/menu%20iniciar.png?raw=true)
 
@@ -22,7 +22,7 @@ Clique em Path depois em Editar:
 
 ![abrir path](https://github.com/nidiodolfini/InfraII/blob/main/Terraform/img/adicionar%20variavel.png?raw=true)
 
-Clique em Novo e depois digite “C:\terraform” ou o local onde estiver o arquivo do terraform 
+Clique em Novo e depois digite *C:\terraform* ou o local onde estiver o arquivo do terraform 
 
 ![adicionar terraform ao path](https://github.com/nidiodolfini/InfraII/blob/main/Terraform/img/variavel%20terraform.png?raw=true)
 
