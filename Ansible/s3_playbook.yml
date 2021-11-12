@@ -16,7 +16,7 @@
       state: present
       #determina a região que será criado.
       region: us-east-1
-      #controla se terá ou não versinamento do recurso.
+      #controla se terá ou não versionamento do recurso.
       versioning: no
       #aqui cria a tag da qual o bucket fará parte.
       tags:
