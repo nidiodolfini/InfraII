@@ -1,0 +1,18 @@
+version: '3'
+services:
+  proxy:
+    image: webservernginx
+    container_name: webserver
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    networks:
+      - webservereth
+
+networks: 
+  webservereth:
+    driver: bridge
+
+
+    # docker-compose up -d
