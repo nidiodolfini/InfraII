@@ -23,6 +23,8 @@ docker network ls
 docker info
     Lista a quantidade de contêineres e imagens e informações do ambiente
 
+docker run --name nomeContainer nomeImagem
+
 
 
 

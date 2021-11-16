@@ -1,24 +1,24 @@
 version: '3'
 services:
   proxy:
-    image: webservernginx
-    container_name: webserver
+    image: webserverspring
+    container_name: springserver
     build:
       context: .
-    #volumes: 
+    #volumes:
     #  - .\site:/usr/share/nginx/htm
-    #volumes: 
+    #volumes:
     #  - site:/usr/share/nginx/htm
     ports:
-      - "8000:80"
+      - "8001:8080"
     networks:
-      - webservereth
+      - webserver
 
-networks: 
-  webservereth:
+networks:
+  webserver:
     driver: bridge
 
-#volumes:
-#  site:
+    #volumes:
+    #  site:
 
     # docker-compose up -d
