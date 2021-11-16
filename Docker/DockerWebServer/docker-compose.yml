@@ -6,7 +6,7 @@ services:
     build:
       context: .
     #volumes:
-    #  - D:\Cloud Drive\OneDrive\Documents\GitHub\InfraII\Docker\DockerWebServer\site:/usr/share/nginx/html
+    #  - C:\Users\nidio\Documents\GitHub\InfraII\Docker\DockerWebServer\site:/usr/share/nginx/html
     ports:
       - "8000:80"
     networks:
