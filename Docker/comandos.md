@@ -22,3 +22,10 @@ docker network ls
 
 docker info
     Lista a quantidade de contêineres e imagens e informações do ambiente
+
+
+
+
+
+docker exec apache cat /etc/os-release
+    mostra informações sobre o SO do container
