@@ -1,8 +1,8 @@
 version: '3'
 services:
-  proxy:
-    image: webserverspring
-    container_name: springserver
+  bananagrupo:
+    image: bananaimagem
+    container_name: bananacontainer
     build:
       context: .
     #volumes:
@@ -12,13 +12,15 @@ services:
     ports:
       - "8001:8080"
     networks:
-      - webserver
+      - bananarede
 
 networks:
-  webserver:
+  bananarede:
     driver: bridge
 
     #volumes:
     #  site:
 
     # docker-compose up -d
+    #mvn install
+    #./mvnw clean package -DskipTests
