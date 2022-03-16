@@ -5,23 +5,23 @@ services:
   # nome do primeiro 
   servidorweb:
     # nome da imagem que vai ser criada a partir do Dockerfile
-    image: webservernginx
+    image: webservernginx # posso mudar
     # nome do meu container
-    container_name: webserver
+    container_name: webserver # posso mudar
     # comando build que faz a criação
     build:
       context: .
     # comando que faz o redirecionamento de portas, portaseupc:portadocontainer  
     ports:
-      - "8081:80"
+      - "8081:80" # posso mudar a porta do pc 
     #coloca meu container na rede  
     networks:
       #nome da rede
-      - webservereth
+      - webservereth # posso mudar
 
 #cria a rede
 networks: 
-  webservereth:
+  webservereth: # posso mudar
     driver: bridge
 
     # comando para criar o container
