@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  mysql_db:
+    image: "mysql:8.0"
+    container_name: mysqlserver
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: filmes
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: r00tM)DT!
+      MYSQL_ROOT_PASSWORD: r00tM)DT!
+    volumes:
+      - db_mysql:/var/lib/mysql
+
+volumes:
+  db_mysql:
+
+
+
+
+
+
+
+
+
+
+
+

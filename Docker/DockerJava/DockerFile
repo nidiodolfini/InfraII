@@ -1,5 +1,5 @@
-FROM openjdk:8
-COPY HelloWorld.java /helloWorld/
+FROM openjdk:11
 WORKDIR /helloWorld/
+COPY HelloWorld.java /helloWorld/
 RUN ["javac", "HelloWorld.java"]
 ENTRYPOINT ["java", "HelloWorld"]
