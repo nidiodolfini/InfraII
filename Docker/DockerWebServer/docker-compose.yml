@@ -17,7 +17,7 @@ services:
     #coloca meu container na rede  
     networks:
       #nome da rede
-      - webservereth # posso mudar
+      - web_servereth # posso mudar
 
   #dados para crição do container do mysql
   mysql_db:
@@ -33,14 +33,14 @@ services:
     volumes: #meu hd externo para o container
       - db_mysql:/var/lib/mysql
     networks: # uma rede entre os container
-      - webservereth # posso mudar
+      - web_servereth # posso mudar
     ##fim do mysql
 
 volumes:
   db_mysql:
 #cria a rede
 networks: 
-  webservereth: # posso mudar
+  web_servereth: # posso mudar
     driver: bridge
 
     # comando para criar o container
