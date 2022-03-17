@@ -3,7 +3,7 @@ version: '3'
 # lista de serviços a serem criados
 services:
   # nome do primeiro 
-  servidorweb:
+  servidorweb: # posso mudar
     # nome da imagem que vai ser criada a partir do Dockerfile
     image: webservernginx # posso mudar
     # nome do meu container
@@ -19,6 +19,25 @@ services:
       #nome da rede
       - webservereth # posso mudar
 
+  #dados para crição do container do mysql
+  mysql_db:
+    image: "mysql:8.0" #imagem vem do dockerhub, equivale ao from
+    container_name: mysqlserver #nomeando container # posso mudar
+    ports: # redirecionando as portas
+      - "3307:3306" # primeira meu pc e seunda porta container
+    environment: #variaveis de ambientes do mysql
+      MYSQL_DATABASE: filmes # posso mudar
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: r00tM)DT! # posso mudar
+      MYSQL_ROOT_PASSWORD: r00tM)DT! # posso mudar
+    volumes: #meu hd externo para o container
+      - db_mysql:/var/lib/mysql
+    networks: # uma rede entre os container
+      - webservereth # posso mudar
+    ##fim do mysql
+
+volumes:
+  db_mysql:
 #cria a rede
 networks: 
   webservereth: # posso mudar
