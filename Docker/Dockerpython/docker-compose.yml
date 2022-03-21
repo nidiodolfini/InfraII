@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  py_service:
+    image: pyimage
+    build: .
+    container_name: pyserver
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ services:
 
   #dados para crição do container do mysql
   mysql_db:
-    image: "mysql:8.0" #imagem vem do dockerhub, equivale ao from
+    image: "mysql:latest" #imagem vem do dockerhub, equivale ao from
     container_name: mysqlserver #nomeando container # posso mudar
     ports: # redirecionando as portas
       - "3307:3306" # primeira meu pc e seunda porta container
@@ -38,6 +38,7 @@ services:
 
 volumes:
   db_mysql:
+
 #cria a rede
 networks: 
   web_servereth: # posso mudar
