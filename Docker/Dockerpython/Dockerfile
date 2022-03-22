@@ -1,4 +1,4 @@
 FROM python:alpine3.14
-WORKDIR /helloWorld/
-COPY pedrapapeltesoura.py /helloWorld/
+WORKDIR /diretorioprinc/
+COPY pedrapapeltesoura.py /diretorioprinc/
 ENTRYPOINT ["python", "pedrapapeltesoura.py"]
