@@ -4,16 +4,3 @@ services:
     image: pyimage
     build: .
     container_name: pyserver
-
-
-
-
-
-
-
-
-
-
-
-
-
