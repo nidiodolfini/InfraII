@@ -32,28 +32,33 @@ docker exec apache cat /etc/os-release
 ---------------
 exportar imagem baseada em um container:
 
-#criar container e abrir um terminal interativo
+#criar container e abrir um terminal interativo 
+
 docker container run -it --name containercriado ubuntu:latest bash
 
 #comando linux para install e update
+
 apt-get update
 apt-get install nginx -y
 
 #sair do terminal interativo
+
 exit
 
 #pausar container
+
 docker stop containercriado
 
-#fazer commit (criar a imagem baseada no container) verificar se o repositório é o mesmo 
+#fazer commit (criar a imagem baseada no container) verificar se o repositório é o mesmo do seu repo no Docker Hub
 
-#do seu repo no Docker Hub
 docker container commit containercriado nomerepo/nomeimagem:version
 
 #verificar se a imagem foi criada
+
 docker images -a
 
 #fazer o push para o docker hub
+
 docker push nomerepo/nomeimagem:version
 
 
