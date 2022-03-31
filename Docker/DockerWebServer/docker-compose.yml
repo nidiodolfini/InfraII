@@ -24,7 +24,7 @@ services:
     image: "mysql:latest" #imagem vem do dockerhub, equivale ao from
     container_name: mysqlserver #nomeando container # posso mudar
     ports: # redirecionando as portas
-      - "3307:3306" # primeira meu pc e seunda porta container
+      - "3306:3306" # primeira meu pc e seunda porta container
     environment: #variaveis de ambientes do mysql
       MYSQL_DATABASE: filmes # posso mudar
       MYSQL_USER: admin
