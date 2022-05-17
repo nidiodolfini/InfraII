@@ -1,5 +1,18 @@
+#dockerfile serve para gerar uma imagem personalizada
+
+# FROM ow dockerhub me dá uma imagem com openjdk
 FROM openjdk:11
-WORKDIR /helloWorld/
-COPY HelloWorld.java /helloWorld/
-RUN ["javac", "HelloWorld.java"]
-ENTRYPOINT ["java", "HelloWorld"]
+
+# seta um diretório principal, se o diretório existir ele seta, se não cria e seta
+WORKDIR /laranja/
+
+#copia um arquivo para o dioretorio selecionado no momento de criação/build da imagem
+COPY CoffeeMachine.java /laranja/
+
+#run abre um cmd/terminal(de mentira, não abre nada, mas faça de conta que sim) e gera 
+#um arquivo .class da nossa aplicação java, no momento da criação da imagem
+RUN ["javac", "CoffeeMachine.java"]
+
+#é um comando especial que só executa quando o container é iniciado,
+#executa nosso arquivo .class no momento que o container é iniciado.
+ENTRYPOINT ["java", "CoffeeMachine"]

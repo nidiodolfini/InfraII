@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  banana:    
+    build: .  #construir a imagem a partir do dockerfile
+    container_name: ng_web
+    ports: #liberar a porta do container
+      - "81:80"
