@@ -7,12 +7,12 @@ FROM openjdk:11
 WORKDIR /laranja/
 
 #copia um arquivo para o dioretorio selecionado no momento de criação/build da imagem
-COPY CoffeeMachine.java /laranja/
+COPY HelloWorld.java /laranja/
 
 #run abre um cmd/terminal(de mentira, não abre nada, mas faça de conta que sim) e gera 
 #um arquivo .class da nossa aplicação java, no momento da criação da imagem
-RUN ["javac", "CoffeeMachine.java"]
+RUN ["javac", "HelloWorld.java"]
 
 #é um comando especial que só executa quando o container é iniciado,
 #executa nosso arquivo .class no momento que o container é iniciado.
-ENTRYPOINT ["java", "CoffeeMachine"]
+CMD ["java", "HelloWorld"]
