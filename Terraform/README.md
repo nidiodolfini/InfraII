@@ -1,6 +1,6 @@
 Faça o download do arquivo: 
 
-https://drive.google.com/drive/folders/1H1dOF7eAZNyjseIGqAPNuDQ_XS-snSoS?usp=sharing
+https://drive.google.com/file/d/1wIhryS4EzTupD9uh35xS6Wq3DBncOU82/view?usp=sharing
 
 Crie uma pasta chamada terraform no disco C:\
 

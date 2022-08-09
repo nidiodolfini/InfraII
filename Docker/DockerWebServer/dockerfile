@@ -1,7 +1,6 @@
-#qual imagem vai ser usada, puxada do DockerHub
-#FROM é mesma coisa que docker pull nginx:latest
+
 FROM nginx
-# está sendo feita a copia da pasta do seu pc para a pasta html do nginx
+
 COPY /site /usr/share/nginx/html
 
-#docker file sempre diz a respeito da imagem que vai usada no containerdocker
+EXPOSE 8080
