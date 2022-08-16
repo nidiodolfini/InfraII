@@ -3,3 +3,4 @@ terraform-aws.pub
 terraform.tfstate
 terraform.tfstate.backup
 .terraform
+.pub
