@@ -1,0 +1,50 @@
+
+# Criação da VPC
+resource "aws_vpc" "nidio-vpc" {
+  cidr_block = "10.0.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support = true
+  tags = {
+    Name = "nidio-vpc"
+  }
+}
+
+# Criação da Subnet Pública
+resource "aws_subnet" "nidio-public-subnet" {
+  vpc_id     = aws_vpc.nidio-vpc.id
+  cidr_block = "10.0.1.0/24"
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "nidio-public-subnet"
+  }
+}
+
+# Criação do Internet Gateway
+resource "aws_internet_gateway" "nidio-igw" {
+  vpc_id = aws_vpc.nidio-vpc.id
+
+  tags = {
+    Name = "nidio-igw"
+  }
+}
+
+# Criação da Tabela de Roteamento
+resource "aws_route_table" "nidio-route-table" {
+  vpc_id = aws_vpc.nidio-vpc.id
+  tags = {
+    Name = "nidio-route-table"
+  }
+}
+
+# Criação da Rota Default para Acesso à Internet
+resource "aws_route" "nidio-internet" {
+  route_table_id            = aws_route_table.nidio-route-table.id
+  destination_cidr_block    = "0.0.0.0/0"
+  gateway_id                = aws_internet_gateway.nidio-igw.id
+}
+
+# Associação da Subnet Pública com a Tabela de Roteamento
+resource "aws_route_table_association" "nidio-pub-association" {
+  subnet_id      = aws_subnet.nidio-public-subnet.id
+  route_table_id = aws_route_table.nidio-route-table.id
+}
